@@ -12,7 +12,8 @@
     "declaration": true,
     "lib": ["es2015", "dom"],
     "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "noUnusedParameters": true,
+    "types": ["node"]
   },
   "include": ["./src/**/*.ts"],
   "exclude": ["node_modules/**/*"]
