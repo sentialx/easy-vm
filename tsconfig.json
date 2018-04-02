@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "baseUrl": "./src",
+    "typeRoots": ["./node_modules/@types"],
+    "noImplicitAny": false,
+    "module": "esnext",
+    "target": "es2016",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "lib": ["es2015", "dom"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules/**/*"]
+}
