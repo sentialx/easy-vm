@@ -6,13 +6,14 @@
     "noImplicitAny": false,
     "module": "esnext",
     "target": "es2016",
-    "jsx": "react",
     "sourceMap": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "declaration": true,
-    "lib": ["es2015", "dom"]
+    "lib": ["es2015", "dom"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "include": ["./src/**/*.ts"],
   "exclude": ["node_modules/**/*"]
 }
