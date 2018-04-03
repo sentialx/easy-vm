@@ -1,7 +1,7 @@
 {
   "name": "easy-vm",
   "version": "1.0.0",
-  "description": "",
+  "description": "Run securely untrusted code with whitelisted Node modules",
   "main": "build/index",
   "types": "build/index.d.ts",
   "scripts": {
@@ -12,18 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nersent/easy-vm.git"
+    "url": "git+https://github.com/Sential/easy-vm.git"
   },
   "keywords": ["vm", "nodejs"],
-  "author": "nersent",
+  "author": "Sential",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nersent/easy-vm/issues"
+    "url": "https://github.com/Sential/easy-vm/issues"
   },
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/nersent/easy-vm#readme",
+  "homepage": "https://github.com/Sential/easy-vm#readme",
   "devDependencies": {
     "prettier": "1.11.1",
     "eslint": "4.19.0",
