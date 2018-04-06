@@ -5,7 +5,7 @@
     "typeRoots": ["./node_modules/@types"],
     "noImplicitAny": false,
     "module": "esnext",
-    "target": "esnext",
+    "target": "es2015",
     "sourceMap": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
