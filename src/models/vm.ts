@@ -19,7 +19,8 @@ export default class {
 
     const context: any = {
       ...this.options.sandbox,
-      module: { ...newModule },
+      module: newModule,
+      exports: newModule.exports,
     };
 
     if (this.options.console) {
