@@ -1,6 +1,6 @@
 {
   "name": "easy-vm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Run securely untrusted code with whitelisted Node modules",
   "main": "build/index",
   "types": "build/index.d.ts",

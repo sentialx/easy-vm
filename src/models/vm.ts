@@ -16,11 +16,15 @@ export default class {
   public run(code: string, filename?: string) {
     const newModule = new Module(filename);
     newModule.filename = filename;
+    newModule.paths = [filename];
+    newModule.loaded = true;
+
+    const newModuleCopy = { ...newModule };
 
     const context: any = {
       ...this.options.sandbox,
-      module: newModule,
-      exports: newModule.exports,
+      module: newModuleCopy,
+      exports: newModuleCopy.exports,
     };
 
     if (this.options.console) {
@@ -52,10 +56,8 @@ export default class {
       context.module.require = context.require;
     }
 
-    vm.runInNewContext(code, context, {
+    return vm.runInNewContext(code, context, {
       filename,
     });
-
-    return context;
   }
 }
