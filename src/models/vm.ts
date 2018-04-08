@@ -56,8 +56,14 @@ export default class {
       context.module.require = context.require;
     }
 
-    return vm.runInNewContext(code, context, {
+    const script = new vm.Script(code, {
       filename,
     });
+
+    return {
+      result: script.runInNewContext(context),
+      script,
+      context,
+    };
   }
 }
