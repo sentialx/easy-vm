@@ -16,7 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/Sential/easy-vm.git"
   },
-  "keywords": ["vm", "nodejs"],
+  "keywords": [
+    "vm",
+    "nodejs"
+  ],
   "author": "Sential",
   "license": "MIT",
   "bugs": {
