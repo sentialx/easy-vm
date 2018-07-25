@@ -10,7 +10,7 @@
     "lint": "eslint --ext .ts --ext .js src/",
     "lint-fix": "prettier-eslint --write src/**/*.ts",
     "prepare": "npm run build",
-    "test": "npm run build && npm run lint"
+    "test": "npm run build"
   },
   "repository": {
     "type": "git",
