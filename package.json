@@ -1,12 +1,12 @@
 {
   "name": "easy-vm",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Run securely untrusted code with whitelisted Node modules",
   "main": "build/index",
   "types": "build/index.d.ts",
   "scripts": {
-    "watch": "webpack-cli --mode development --watch",
-    "build": "webpack-cli --mode production",
+    "watch": "tsc --watch",
+    "build": "tsc",
     "lint": "eslint --ext .ts --ext .js src/",
     "lint-fix": "prettier-eslint --write src/**/*.ts",
     "prepare": "npm run build",
@@ -27,21 +27,17 @@
   },
   "homepage": "https://github.com/Sential/easy-vm#readme",
   "devDependencies": {
-    "eslint": "4.19.0",
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-plugin-import": "2.9.0",
-    "eslint-plugin-jsx-a11y": "6.0.3",
-    "eslint-plugin-react": "7.7.0",
-    "prettier": "1.11.1",
-    "prettier-eslint": "8.8.1",
+    "eslint": "5.2.0",
+    "eslint-config-airbnb": "17.0.0",
+    "eslint-plugin-import": "2.13.0",
+    "prettier": "1.13.7",
+    "prettier-eslint": "8.8.2",
     "prettier-eslint-cli": "4.7.1",
-    "typescript-eslint-parser": "14.0.0"
+    "typescript-eslint-parser": "16.0.1"
   },
   "dependencies": {
-    "@types/node": "9.6.0",
-    "ts-loader": "4.1.0",
-    "typescript": "2.7.2",
-    "webpack": "4.5.0",
-    "webpack-cli": "2.0.14"
+    "@types/node": "10.5.3",
+    "ts-loader": "4.4.2",
+    "typescript": "2.9.2"
   }
 }

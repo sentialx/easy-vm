@@ -1,4 +1,4 @@
 export default interface VMRequireOptions {
-  mock?: object;
+  mock?: any;
   builtin?: string[];
 }; // eslint-disable-line
