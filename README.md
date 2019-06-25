@@ -47,7 +47,7 @@ An `EasyVM` can be used to create a sandbox.
 
   * `options` VMOptions
     * `console` boolean - Whether to enable console in the sandbox or not.
-    * `sanbox` object - A global object in VM
+    * `sandbox` object - A global object in VM
     * `require` VMRequireOptions | false - False to disable require or object to enable require with options.
       * `builtin` string[] - Array of allowed builtin modules, Use `['*']` to accept all.
       * `mock` object - Collection of mocked Node modules.
