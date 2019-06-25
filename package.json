@@ -7,9 +7,9 @@
   "scripts": {
     "watch": "tsc --watch",
     "build": "tsc",
-    "lint": "eslint --ext .ts --ext .js src/",
-    "lint-fix": "prettier-eslint --write src/**/*.ts",
-    "prepare": "npm run build",
+    "lint": "tslint \"src/**/*.ts*\"",
+    "lint-fix": "prettier --write \"src/**/*.ts*\" && tslint \"src/**/*.ts*\" --fix",
+    "prepublishOnly": "npm run build",
     "test": "npm run build"
   },
   "repository": {
@@ -20,7 +20,7 @@
     "vm",
     "nodejs"
   ],
-  "author": "Sential",
+  "author": "sentialx",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sentialx/easy-vm/issues"
