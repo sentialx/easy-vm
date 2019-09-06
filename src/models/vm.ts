@@ -1,7 +1,8 @@
-import Module from 'module';
-import vm from 'vm';
+import * as vm from 'vm';
 import VMOptions from './vm-options';
 import VMRequireOptions from './vm-require-options';
+
+const { Module } = require('module');
 
 export default class {
   private options: VMOptions = {
@@ -10,7 +11,7 @@ export default class {
   };
 
   public constructor(options: VMOptions) {
-    this.options = options;
+    this.options = {...this.options, ...options};
   }
 
   public run(code: string, filename?: string) {

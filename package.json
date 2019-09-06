@@ -30,14 +30,14 @@
   },
   "homepage": "https://github.com/sentialx/easy-vm#readme",
   "devDependencies": {
-    "@types/node": "12.6.8",
-    "tslint": "5.18.0",
+    "@types/node": "12.7.4",
+    "tslint": "5.19.0",
     "tslint-config-airbnb": "5.11.1",
     "tslint-config-prettier": "1.18.0",
     "prettier": "1.18.2"
   },
   "dependencies": {
     "ts-loader": "6.0.4",
-    "typescript": "3.5.3"
+    "typescript": "3.6.2"
   }
 }
