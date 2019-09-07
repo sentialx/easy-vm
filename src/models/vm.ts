@@ -8,6 +8,7 @@ export default class {
   private options: VMOptions = {
     require: false,
     console: true,
+	timeout: 0,
   };
 
   public constructor(options: VMOptions) {
@@ -62,7 +63,7 @@ export default class {
     });
 
     return {
-      result: script.runInNewContext(context),
+      result: script.runInNewContext(context, { timeout: this.options.timeout }),
       script,
       context,
     };
