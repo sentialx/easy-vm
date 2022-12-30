@@ -37,7 +37,7 @@
     "prettier": "1.18.2"
   },
   "dependencies": {
-    "ts-loader": "6.0.4",
+    "ts-loader": "9.4.2",
     "typescript": "3.6.2"
   }
 }
